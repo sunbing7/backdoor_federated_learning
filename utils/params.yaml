@@ -16,7 +16,7 @@ sampling_dirichlet: true
 dirichlet_alpha: 0.9
 eta: 1
 
-save_model: true
+save_model: false
 save_on_epochs: [10, 100, 500, 1000, 2000, 5000]
 #resumed_model: false
 #resumed_model: recover/model_cifar_10k.pt.tar
@@ -24,14 +24,14 @@ save_on_epochs: [10, 100, 500, 1000, 2000, 5000]
 
 resumed_model:
 environment_name: ppdl_experiment
-report_train_loss: ture
-report_test_loss: ture
-report_poison_loss: ture
-track_distance: ture
-track_clusters: ture
+report_train_loss: false
+report_test_loss: false
+report_poison_loss: false
+track_distance: false
+track_clusters: false
 log_interval: 10
 
-modify_poison: ture
+modify_poison: false
 
 # file names of the images
 poison_type: wall
@@ -61,7 +61,7 @@ poison_label_swap: 2
 size_of_secret_dataset: 200
 poisoning_per_batch: 1
 poison_test_repeat: 1000
-is_poison: ture
+is_poison: false
 baseline: false
 random_compromise: false
 noise_level: 0.01
